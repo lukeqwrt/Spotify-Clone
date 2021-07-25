@@ -273,6 +273,9 @@ $spCol: #1DB954;
                display: flex;
                flex-wrap: wrap;
             padding-bottom: 30px;
+            a{
+                text-decoration: none;
+            }
             .suggest-box{
                 margin: 10px 0;
                 margin-right: 22px;
@@ -286,7 +289,7 @@ $spCol: #1DB954;
                 padding: 20px 0px;
                 transition: background 0.3s ease-out;
                 cursor: pointer;
-
+       
              
                 img{
           
