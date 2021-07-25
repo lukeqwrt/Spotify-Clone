@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="/css/itzy.css">
+    <link rel="icon" href="../assets/spotify-logo-png-green.png">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+
+</head>
+<body>
+
+    <!-- <div class="not-available">
+        <div class="message">
+            <h1><strong>Welcome, Listen To Spotify</strong></h1>
+        </div>
+    </div> -->
+    <div class="loader">
+        <div class="loading-wrapper">
+            <div class="sp sp-circle">
+
+            </div>   
+            <h3>Loading</h3>
+        </div>
+    </div>
+    <div class="main">
+        <div class="side-left-nav">
+            <ul class="nav-list">
+                <li class="list header-logo">
+                    <img src="../assets/spitfywhitelogo.png" alt="">
+                </li>
+                <li class="list">
+                    <img src="../assets/icons/home.png" alt="">
+                    <a href="../spotify-home.html"><strong>Home</strong></a>
+                </li>
+                <li class="list">
+                    <img src="../assets/icons/search.png" alt="">
+                    <a href=""><strong>Search</strong></a>
+                </li>
+                <li class="list">
+                    <img src="../assets/icons/library.png" alt="">
+                    <a href=""><strong>Your Library</strong></a>
+                </li>
+                <li class="list">
+                    <img src="../assets/icons/add_box.png" alt="">
+                   <a href=""><strong>Create Playlist</strong></a>
+                </li>
+                <li class="list">
+                    <img src="../assets/icons/like.png" alt="">
+                    <a href=""><strong>Liked Songs</strong></a>
+                </li>
+            </ul>
+            
+            <span></span>
+            <div class="playlist">
+                <p>My Playlist #1</p>
+                <p>My Playlist #2</p>
+            </div>
+           
+        </div>
+
+        
+    <div class="content">
+        <div class="header">
+            <div class="opacity">
+                <div class="header-content">
+                    <div class="wrapper">
+                        <div class="fas fa-certificate">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <p>Verified Artist</p>
+                    </div>
+                    <h1><strong>ITZY</strong></h1>
+
+                    <p class="listeners">4,491,747 monthly listeners</p>
+                </div>
+                <div class="arrow-wrapper">
+                    <img onclick="window.location.href = '/spotify-home.html'" class="arrow-left" src="/assets/icons/left.png" alt="">
+                    <img class="arrow-right" src="/assets/icons/right.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <button id="follow"><strong> FOLLOW </strong></button>
+        <h3 class="popular">Popular</h3>
+        <div class="music-container">
+            <div class="musics " id="music-container">
+                <audio src="./itzy-music/ITZY _마.피.아. In the morning_ M_V _ITZY(MP3_160K).mp3" id="audio"></audio>
+                <button id="play" class="notplaying action-btn action-btn-big">
+                    <i class="trigger fas fa-play"></i>
+                    <span id="number">1</span>
+                    <div class="playing">
+                        <span class="playing__bar playing__bar1"></span>
+                        <span class="playing__bar playing__bar2"></span>
+                        <span class="playing__bar playing__bar3"></span>
+                        <span class="playing__bar playing__bar4"></span>
+                      </div>
+                  </button>
+                <div class="artist-image">
+                    <img src="../assets/spotify/itzy-icon-guess-who.jpg" alt="">
+                </div>
+                <div class="music-content">
+                    <p>In the morning</p>
+             
+                    <p>59,204,039</p>
+                    <i class="far fa-heart"></i>
+                    <p class="time">2:52</p>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            <div class="musics " id="music-container">
+                <audio src="./itzy-music/ITZY _WANNABE_ M_V(MP3_160K).mp3" id="audio"></audio>
+                <button id="play" class="notplaying action-btn action-btn-big">
+                    <i class="trigger fas fa-play"></i>
+                    <span id="number">2</span>
+                    <div class="playing">
+                        <span class="playing__bar playing__bar1"></span>
+                        <span class="playing__bar playing__bar2"></span>
+                        <span class="playing__bar playing__bar3"></span>
+                        <span class="playing__bar playing__bar4"></span>
+                      </div>
+                  </button>
+                <div class="artist-image">
+                    <img src="../assets/spotify/wannabe-icon.jpg" alt="">
+                </div>
+                <div class="music-content">
+                    <p>WANNABE</p>
+
+                    <p>172,317,051</p>
+                    <i class="far fa-heart"></i>
+                    <p class="time">3:11</p>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            <div class="musics " id="music-container">
+                <audio src="./itzy-music/ITZY _Not Shy_ Lyrics (있지 Not Shy 가사) (Color Coded Lyrics)(MP3_160K).mp3" id="audio"></audio>
+                <button id="play" class="notplaying action-btn action-btn-big">
+                    <i class="trigger fas fa-play"></i>
+                    <span id="number">3</span>
+                    <div class="playing">
+                        <span class="playing__bar playing__bar1"></span>
+                        <span class="playing__bar playing__bar2"></span>
+                        <span class="playing__bar playing__bar3"></span>
+                        <span class="playing__bar playing__bar4"></span>
+                      </div>
+                  </button>
+                <div class="artist-image">
+                    <img src="../assets/spotify/not-shy-icon.jpg" alt="">
+                </div>
+                <div class="music-content">
+                    <p>Not Shy</p>
+
+                    <p>111,514,853</p>
+                    <i class="far fa-heart"></i>
+                    <p class="time">2:57</p>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            <div class="musics " id="music-container">
+                <audio src="./itzy-music/SHOOT_(MP3_160K).mp3" id="audio"></audio>
+                <button id="play" class="notplaying action-btn action-btn-big">
+                    <i class="trigger fas fa-play"></i>
+                    <span id="number">4</span>
+                    <div class="playing">
+                        <span class="playing__bar playing__bar1"></span>
+                        <span class="playing__bar playing__bar2"></span>
+                        <span class="playing__bar playing__bar3"></span>
+                        <span class="playing__bar playing__bar4"></span>
+                      </div>
+                  </button>
+                <div class="artist-image">
+                    <img src="../assets/spotify/wannabe-icon.jpg" alt="">
+                </div>
+                <div class="music-content">
+                    <p>SHOOT!</p>
+
+                    <p>10,466,872</p>
+                    <i class="far fa-heart"></i>
+                    
+                    <p class="time">2:19</p>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            <div class="musics " id="music-container">
+                <audio src="./itzy-music/ITZY (있지) _DALLA DALLA(달라달라)_ (Color Coded Lyrics Eng_Rom_Han_가사)(MP3_160K).mp3" id="audio"></audio>
+                <button id="play" class="notplaying action-btn action-btn-big">
+                    <i class="trigger fas fa-play"></i>
+                    <span id="number">5</span>
+                    <div class="playing">
+                        <span class="playing__bar playing__bar1"></span>
+                        <span class="playing__bar playing__bar2"></span>
+                        <span class="playing__bar playing__bar3"></span>
+                        <span class="playing__bar playing__bar4"></span>
+                      </div>
+                  </button>
+                <div class="artist-image">
+                    <img src="../assets/spotify/dalladalla-icon.jpg" alt="">
+                </div>
+                <div class="music-content">
+                    <p>달라달라 (DALLA DALLA)</p>
+
+                    <p>154,356,,949</p>
+                    <i class="far fa-heart"></i>
+                    <p class="time">3:19</p>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+          
+        
+        
+         
+        </div>
+
+
+        
+
+      
+    </div>
+
+
+</div>
+
+  
+</body>
+</html>
+
+<script>
+
+window.addEventListener('load', () => {
+    const loader =  document.querySelector('.loader');
+    loader.classList.add("hidden")
+})
+// heart
+const allheart = document.querySelectorAll(".fa-heart")
+const shade = document.querySelectorAll("far")
+allheart.forEach(hearts => {
+    hearts.addEventListener('click', () => {
+        if(hearts.classList.contains("far")){
+            hearts.classList.add("fas")
+            hearts.classList.remove("far")
+            hearts.style.color = "#1DB954"
+
+            hearts.style.visibility = "visible"
+            const parenttwo = hearts.parentElement.parentElement
+            parenttwo.addEventListener("mouseover", (e) => {
+                e.stopPropagation();
+                hearts.style.visibility = "visible"
+            }, false)
+            parenttwo.addEventListener("mouseout", (e) => {
+                e.stopPropagation();
+                hearts.style.visibility = "visible"
+            }, false)
+        }
+        else{
+            hearts.classList.remove("fas")
+            hearts.classList.add("far")
+            hearts.style.color = "unset"
+            const parent = hearts.parentElement.parentElement
+            hearts.style.visibility = "hidden" 
+  
+            console.log(parent)
+            parent.addEventListener("mouseover", (e) => {
+                e.stopPropagation();
+                hearts.style.visibility = "visible"
+            }, false)
+            parent.addEventListener("mouseout", (e) => {
+                e.stopPropagation();
+                hearts.style.visibility = "hidden"
+            }, false)
+
+
+        }
+    })
+});
+
+// follow
+    const btnFollow = document.getElementById("follow")
+    btnFollow.addEventListener("click", () => {
+
+        if(btnFollow.innerText == "FOLLOWING"){
+            btnFollow.innerText = "FOLLOW"
+        }else{
+            document.getElementById("follow").innerText = "FOLLOWING"
+        }
+    })
+
+const musicContainer = document.getElementById('music-container');
+const playBtn = document.querySelectorAll('#play');
+
+
+function pauseall(){
+    const allaudio = document.querySelectorAll("#audio");
+    for(let i=0; i<allaudio.length; i++) allaudio[i].pause();
+
+}
+function backtodefault(){
+    const trigger = document.querySelectorAll(".trigger")
+    for(let i=0; i<trigger.length; i++) trigger[i].classList.add("fa-play");
+}
+
+function removeAnimation(){
+    const animation = document.querySelectorAll(".playing")
+    for(let i=0; i<animation.length; i++) animation[i].style.display = "none";
+}
+
+function backNumber(){
+    const number = document.querySelectorAll("#number")
+    for(let i=0; i<number.length; i++) number[i].style.display = "block";
+    const allmusics = document.querySelectorAll("musics")
+}
+defaultHover()
+function defaultHover() {
+    const alldefnumber = document.querySelectorAll("#number")
+    const musicdefaulthover = document.querySelectorAll(".musics")
+    for(let i=0; i<musicdefaulthover.length; i++) {
+        musicdefaulthover[i].addEventListener("mouseover", () => {
+            alldefnumber[i].style.display = "none"
+        })
+        musicdefaulthover[i].addEventListener("mouseout", () => {
+            alldefnumber[i].style.display = "block"   
+        })  
+    }
+ 
+}
+function defaultColor(){
+    const textColor = document.querySelectorAll(".music-content")
+    for(let i=0; i<textColor.length; i++) textColor[i].firstElementChild.style.color = "white"
+
+}
+// Play song
+function playSong() {
+  musicContainer.classList.add('play');
+}
+// Pause song
+function pauseSong() {
+  musicContainer.classList.remove('play');
+}
+playBtn.forEach(i => {
+    i.addEventListener('click', (e) => {
+        const isPlaying = musicContainer.classList.contains('play');
+        const audio = i.parentElement.querySelector("#audio")
+        
+        
+        if (isPlaying) {
+            i.querySelector('i.fas').classList.add('fa-play');
+            i.querySelector('i.fas').classList.remove('fa-pause');
+            i.classList.add("notplaying")
+            i.parentElement.querySelector(".music-content").firstElementChild.style = "color:white;"
+            i.querySelector(".playing").style.display = "unset"
+            i.style.position = "relative"
+            i.querySelector("#number").style.display = "unset"
+            i.querySelector("#number").style.position = "absolute"
+            i.querySelector("#number").style.top = "50%"
+            i.querySelector("#number").style.left = "50%"
+            i.querySelector("#number").style.transform = "translate(-50%,-50%)"
+            i.querySelector("#number").style.display = "block"
+            const hovering = i.parentElement;
+            hovering.addEventListener("mouseover", () => {
+                i.querySelector("#number").style.display = "none"
+            }, false)
+            hovering.addEventListener("mouseout", () => {
+                              i.querySelector("#number").style.display = "block"
+            }, false)
+            defaultColor();
+            defaultHover();
+            backNumber();
+            backtodefault();
+            removeAnimation();
+            audio.pause();
+            pauseSong();
+        } else {
+            i.querySelector('i.fas').classList.remove('fa-play');
+            i.querySelector('i.fas').classList.add('fa-pause');
+            i.classList.remove("notplaying")
+            //console.log(i.parentElement.querySelector(".music-content").firstElementChild.innerText)
+            var title = i.parentElement.querySelector(".music-content").firstElementChild.innerText
+            i.parentElement.querySelector(".music-content").firstElementChild.style = "color:#1DB954;"
+            i.querySelector("#number").style.display = "none"
+            i.querySelector(".playing").style.display = "flex"
+            const showmyi = i.parentElement;
+            showmyi.addEventListener("mouseover", () => {
+                i.querySelector("#number").style.display = "none"
+            })
+            showmyi.addEventListener("mouseout", () => {
+                 i.querySelector("#number").style.display = "none"
+            })
+            pauseall();
+            playSong();
+            audio.play();
+        }
+
+    })
+});
+
+
+
+</script>

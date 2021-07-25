@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+$spCol: #1DB954;
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .loading-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .sp {
+            width: 32px;
+            height: 32px;
+            clear: both;
+            margin: 20px auto;
+        }
+        
+        .sp-circle {
+            border: 4px rgba($spCol,0.25) solid;
+            border-top: 4px rgba($spCol,1) solid;
+            border-radius: 50%;
+            -webkit-animation: spCircRot .6s infinite linear;
+            animation: spCircRot .6s infinite linear;
+
+            @-webkit-keyframes spCircRot {
+                from { -webkit-transform: rotate(0deg); }
+                to { -webkit-transform: rotate(359deg); }
+            }
+            @keyframes spCircRot {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(359deg); }
+            }
+            
+            
+        }
+        h3{
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: $spCol;
+        }
+    }
+}
+.loader.hidden{
+    display: none;
+}
+.main{
+    height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 240px 1fr;
+    .side-left-nav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 200px;
+        height: 100%;
+        background: #000000;
+        padding: 0 20px;
+    
+       .nav-list{
+            .header-logo{
+                padding: 9px 0px;
+                img{
+                    height: auto;
+                    width: 140px;
+                }
+            }
+
+
+           .list{
+               list-style: none;
+               margin-top: 12px;
+               display: flex;
+               display: flex;
+               align-items: center;
+
+           
+
+               a{
+                   font-size: 13px;
+                   padding-left: 10px;
+                   text-decoration: none;
+                   color: #d1d1d1;
+                   font-family: 'Poppins', sans-serif;
+                   transition: 0.3s ease;
+                  &:hover{
+                    color:white;
+                  }
+               }
+           }
+           :nth-child(5){
+               margin-top: 30px;
+               a{
+                padding-left: 9px;
+               }
+           }
+           :nth-child(6){
+               padding-left: 4px;
+           }
+       }
+        span{
+            display: block;
+            margin-top: 25px;
+            margin-bottom: 18px;
+            width: 100%;
+            border-top: 0.1em solid #858585;
+        }
+       .playlist{
+            p{
+                cursor: pointer;
+                margin-top: 10px;
+                font-size: 14px;
+                color: #d1d1d1;
+                font-family: 'Poppins', sans-serif;
+                transition: 0.3s ease;
+            }
+       }
+    }
+
+    
+    .content{
+        
+        grid-column: 2/3;
+       // background: linear-gradient(179.67deg, #8564CC -6.36%, #635288 -6.36%, #1C1825 62.06%);
+       background: linear-gradient(180.29deg, #8564CC 9.29%, #635288 9.29%, #0D0B11 73.92%);
+    //    padding-left: 28px;
+    //    @media screen and (max-width: 988px) {
+    //     padding-left: 15px;
+    //  }
+        .header{
+            height: 340px;
+            width: 100%;
+            position: relative;
+            background: url('../assets/spotify/olivia-banner-try-uli.jpg') ;
+            background-position: center 0%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            .opacity{
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0,0.3);
+                position: relative;
+                .arrow-wrapper{
+                    position: absolute;
+                    top: 10px;
+                    left: 30px;
+                    .arrow-right{
+                        padding-left: 12px;
+                    }
+                    .arrow-left{
+                        cursor: pointer;
+                    }
+                }
+                .header-content{
+                
+                    position: absolute;
+                    left: 0px;
+                    bottom: 25px;
+                    padding: 0 30px;
+                    .wrapper{
+                        margin-bottom: -10px;
+                        display: flex;
+                        align-items: center;
+                        .fa-certificate{
+                            position: relative;
+                            font-size: 25px;
+                            color: #1877F2;
+                            .fa-check{
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                color: white;
+                                transform: translate(-50%, -50%);
+                                font-size: 10px;
+                            }
+                        }
+                        p{
+                            padding-left: 5px;
+                            color: white;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                    }
+    
+                    h1{
+                        font-size: 90px;
+                        color: white;
+                        font-family: 'Poppins', sans-serif;
+                        letter-spacing: -4px;
+                    }
+                    .listeners{
+                        margin-top: -10px;
+                        color: white;
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+            }
+        }
+
+        #follow{
+            margin: 0px 30px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background: none;
+            border-radius: 5px;
+            border:1px solid rgb(121, 121, 121);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            padding: 5px 20px;
+            font-size: 16px;
+            &:hover{
+                border:1px solid white;
+            }
+        }
+        .popular{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            padding: 12px 30px;
+        }
+
+        .music-container{
+            padding: 5px 35px;
+            padding-bottom: 30px;
+            .musics{
+                &:hover{
+                    background: rgba(126, 126, 126, 0.2);
+
+                    #play{
+                        position: relative;
+                        i{
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                      
+                        #number{
+                            display: none;
+                        }
+                        .playing{
+                            visibility: hidden;
+                        }
+                    }
+                    .fa-heart{
+                       visibility: visible;
+                    }
+                   #def-heart{
+                        color:#1DB954;
+                    }
+                    .fa-ellipsis-h{
+                        visibility: visible;
+                    }
+                    
+                }
+                border-radius: 5px;
+                padding: 8px 20px;
+                margin-bottom: 0px;
+                max-width: 680px;
+                display: flex;
+                align-items: center;
+                button{
+                    width: 40px;
+                    background:rgba(0, 0, 0,0.0);
+                    border: 0;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 14px;
+                    i{
+                        display: none;
+                    }
+               
+                    span{
+                        color: white;
+                        font-family: 'Poppins', sans-serif;
+                        margin: 0 ;
+                        font-size: 13px;
+                        display: block;
+                    }
+                    .playing {
+                        display: none;
+                        width: 2rem;
+                        height: 2rem;
+                        border-radius: .3rem;
+                    //  display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        padding: .4rem 7px;
+                        box-sizing: border-box;
+                        .playing__bar {
+                            display: inline-block;
+                            background: #1DB954;
+                            width:15%;
+                            height: 100%;
+                            animation: up-and-down 1.3s ease infinite alternate;
+                          }
+                          .playing__bar1 {
+                            height: 60%;
+                          }
+                          
+                          .playing__bar2 {
+                            height: 30%;
+                            animation-delay: -2.2s;
+                          }
+                          
+                          .playing__bar3 {
+                            height: 75%;
+                            animation-delay: -3.7s;
+                          }
+                          
+                            @keyframes up-and-down {
+                                10% {
+                                height: 30%;
+                                }
+                                
+                                30% {
+                                height: 100%;
+                                }
+                                
+                                60% {
+                                height: 50%;
+                                }
+                                
+                                80% {
+                                height: 75%;
+                                }
+                                
+                                100% {
+                                height: 60%;
+                                }
+                            }
+                      }
+                }
+              
+                .artist-image{
+                    height: 100%;
+                    margin: 0 14px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        height: auto;
+                        width: 45px;
+                    }
+                }
+                .music-content{
+                    color: #d1d1d1;
+                    font-family: 'Poppins', sans-serif;
+               height: 100%;
+               width: 100%;
+               display: grid;
+               grid-auto-flow: column;
+               display: grid;
+               grid-auto-flow: column;
+               grid-template-columns: 300px 1fr auto;
+               grid-template-rows: 1fr;
+               position: relative;
+                    p{
+               
+                        font-size: 14px;
+                    }
+                    :nth-child(1){
+                        color: white;
+                    }
+                   .fa-heart{
+                       
+                   }
+                   .fa-ellipsis-h{
+
+                   }
+                  
+                   i{
+                       visibility: hidden;
+                   }
+                   .time{
+                       padding: 0 20px;
+                   }
+
+                }
+            }
+        }
+    }
+
+
+}
+

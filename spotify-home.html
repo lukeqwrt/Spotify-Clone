@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="/css/spotify-home.css">
+    <link rel="icon" href="./assets/spotify-logo-png-green.png">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" defer></script>
+
+</head>
+<body>
+
+    <!-- <div class="not-available">
+        <div class="message">
+            <h1><strong>Welcome, Listen To Spotify</strong></h1>
+        </div>
+    </div> -->
+    <div class="loader">
+        <div class="loading-wrapper">
+            <div class="sp sp-circle">
+
+            </div>   
+            <h3>Loading</h3>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="side-left-nav">
+            <ul class="nav-list">
+                <li class="list header-logo">
+                    <img src="./assets/spitfywhitelogo.png" alt="">
+                </li>
+                <li class="list">
+                    <img src="./assets/icons/home.png" alt="">
+                    <a href=""><strong>Home</strong></a>
+                </li>
+                <li class="list">
+                    <img src="./assets/icons/search.png" alt="">
+                    <a href=""><strong>Search</strong></a>
+                </li>
+                <li class="list">
+                    <img src="./assets/icons/library.png" alt="">
+                    <a href=""><strong>Your Library</strong></a>
+                </li>
+                <li class="list">
+                    <img src="./assets/icons/add_box.png" alt="">
+                   <a href=""><strong>Create Playlist</strong></a>
+                </li>
+                <li class="list">
+                    <img src="./assets/icons/like.png" alt="">
+                    <a href=""><strong>Liked Songs</strong></a>
+                </li>
+            </ul>
+            
+            <span></span>
+            <div class="playlist">
+                <p>My Playlist #1</p>
+                <p>My Playlist #2</p>
+            </div>
+           
+        </div>
+
+        
+    <div id="content" class="content" >
+        <h1><strong>WELCOME TO SPOTIFY</strong></h1>
+        <div class="music-wrapper">
+            <a  href="./Artist/Olivia-Rodrigo.html">
+                <div id="oliv"  class="music-card">
+                    <img src="./assets/spotify/oliv.jpg" alt="">
+                    <h4><strong>Olivia Rodrigo</strong></h4>
+                </div>
+            </a>
+            <a href="./Artist/ariana.html">
+                <div id="ariana" class="music-card" id="ari">
+                    <img src="./assets/spotify/ariana.jpg" alt="">
+                    <h4><strong>Ariana Grande</strong></h4>
+                </div>
+                </a>   
+            <!-- <div class="music-card">
+                <img src="./assets/spotify/twice.jpg" alt="">
+                <h4><strong>Twice</strong></h4>
+            </div> -->
+            <a href="./Artist/bts.html">
+            <div id="bts" class="music-card">
+                <img src="./assets/spotify/bts.jpg" alt="">
+                <h4><strong>BTS</strong></h4>
+            </div>
+            </a>
+            <a href="./Artist/blackpink.html">
+            <div id="bp" class="music-card">
+                <img src="./assets/spotify/blackpink.jpg" alt="">
+                <h4><strong>BLACKPINK</strong></h4>
+            </div>
+            </a>
+            <!-- <div class="music-card">
+                <img src="./assets/spotify/duo lipa.jpg" alt="">
+                <h4><strong>Dua Lipa</strong></h4>
+            </div> -->
+ 
+            <a id="taylor" href="./Artist/Taylor.html">
+                <div id="taylor" class="music-card">
+                    <img src="./assets/spotify/taylor.jpg" alt="">
+                    <h4><strong>Taylor Swift</strong></h4>
+                </div>
+                </a> 
+            <!-- <div class="music-card">
+                <img src="./assets/spotify/iu.jpg" alt="">
+                <h4><strong>IU</strong></h4>
+            </div> -->
+           <a href="./Artist/itzy.html">
+            <div id="itzy" class="music-card">
+                <img src="./assets/spotify/itzy.jpg" alt="">
+                <h4><strong>ITZY</strong></h4>
+            </div>
+            </a>
+        </div>
+        <h1 class="suggest-title"><strong>Suggested artists</strong></h1>
+        <div class="suggested-wrapper">
+            <a href="./Artist/rose.html">
+            <div class="suggest-box">
+                <img src="./assets/spotify/rose.jpg" alt="">
+                <h2>ROSÉ</h2>
+                <h3>Artist</h3>
+            </div>
+        </a>
+            <div class="suggest-box">
+                <img src="./assets/spotify/maroon5.jpg" alt="">
+                <h2>Maroon 5</h2>
+                <h3>Artist</h3>
+                <div class="play-icon"></div>
+            </div>
+            <div class="suggest-box">
+                <img src="./assets/spotify/duo lipa.jpg" alt="">
+                <h2>Dua Lipa</h2>
+                <h3>Artist</h3>
+            </div>
+            <div class="suggest-box">
+                <img src="./assets/spotify/coldplay.png" alt="">
+                <h2>Coldplay</h2>
+                <h3>Artist</h3>
+            </div>
+            <div class="suggest-box">
+                <img src="./assets/spotify/luke.jpg" alt="">
+                <h2>Luke Sillano</h2>
+                <h3>Artist</h3>
+            </div>
+        </div>
+     
+
+        
+    </div>
+
+
+</div>
+
+  
+</body>
+</html>
+
+<script src="./js/app.js"></script>
