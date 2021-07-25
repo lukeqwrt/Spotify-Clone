@@ -56,6 +56,9 @@ $spCol: #1DB954;
     display: none;
 }
 .main{
+    @media screen and (max-width: 768px) {
+        display: none;
+ }
     height: 100vh;
     display: grid;
     grid-auto-flow: column;

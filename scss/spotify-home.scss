@@ -266,9 +266,15 @@ $spCol: #1DB954;
   }
 }
         .suggest-title{
+            @media screen and (max-width: 768px) {
+                display: none;
+         }
             font-size: 22px;
         }
         .suggested-wrapper{
+            @media screen and (max-width: 768px) {
+                display: none;
+         }
                // layout
                display: flex;
                flex-wrap: wrap;
