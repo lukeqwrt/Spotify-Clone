@@ -137,7 +137,10 @@ $spCol: #1DB954;
         
         grid-column: 2/3;
        // background: linear-gradient(179.67deg, #8564CC -6.36%, #635288 -6.36%, #1C1825 62.06%);
-       background: linear-gradient(180deg, #1E6F6A 9.07%, #111113 70.28%);
+     //  background: linear-gradient(180.29deg, #A2BECA 9.29%, #0D0B11 73.92%);
+
+     background: linear-gradient(180deg, #0E85A5 9.07%, #111113 70.28%);
+
 
 
     //    padding-left: 28px;
@@ -148,16 +151,15 @@ $spCol: #1DB954;
             height: 340px;
             width: 100%;
             position: relative;
-            background: url('../assets/spotify/blackpink-final.jpg') ;
-            background-position: center 160%;
+            background: url('../assets/spotify/coldplay-banner.jpg') ;
+            background-position: center 0%;
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
-            
             .opacity{
                 height: 100%;
                 width: 100%;
-                background: rgba(0, 0, 0,0.3);
+                background: rgba(0, 0, 0,0.2);
 
                 .arrow-wrapper{
                     position: absolute;
@@ -237,6 +239,7 @@ $spCol: #1DB954;
             font-size: 24px;
             padding: 12px 30px;
         }
+
         .music-container{
             padding: 5px 35px;
             padding-bottom: 30px;
