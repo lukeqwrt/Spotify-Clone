@@ -295,8 +295,15 @@ $spCol: #1DB954;
                 padding: 20px 0px;
                 transition: background 0.3s ease-out;
                 cursor: pointer;
-       
+                position: relative;
              
+                &:hover .play-icon{
+                    transition: 0.3s ease;
+                    bottom: 40%;
+                    right: 10%;
+                    visibility: visible;
+                    opacity: 1;
+                }
                 img{
           
                     height: auto;
@@ -322,6 +329,21 @@ $spCol: #1DB954;
                     font-size: 15px;
                     padding-bottom: 5px;
                     padding-left: 20px;
+                }
+                .play-icon{
+                    transition: 0.2s ease-in;
+                    position: absolute;
+                    bottom: 37%;
+                    right: 10%;
+                    background: #1DB954;
+                    border-radius: 100%;
+                    visibility: hidden;
+                    opacity: 0;
+                    i{
+                        padding: 15px;
+                        color: white;
+                        font-size: 12px;
+                    }
                 }
             }
         }
