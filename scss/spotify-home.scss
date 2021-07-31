@@ -174,13 +174,26 @@ $spCol: #1DB954;
 
        @media screen and (max-width: 615px) {
         padding:0 10px;
+
  }
  
+        .arrow-wrapper{
+            padding-top: 13px;
+
+            .arrow-right{
+                padding-left: 13px;
+            }
+            img{
+                height: auto;
+                width: 34px;
+            }
+        }
         h1{
             font-family: 'Poppins', sans-serif;
             color: white;
             font-size: 30px;
-            padding: 20px 0;
+            padding-top: 28px;
+            padding-bottom: 17px;
         }
 
         .music-wrapper{

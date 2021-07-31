@@ -376,10 +376,13 @@ $spCol: #1DB954;
                grid-template-rows: 1fr;
                position: relative;
                     p{
-               
+  
                         font-size: 14px;
                     }
                     :nth-child(1){
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
                         color: white;
                     }
                     :nth-child(2){

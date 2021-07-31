@@ -46,3 +46,13 @@ window.addEventListener('load', () => {
 //             body.style.background = "url('/assets/itzy-bg.jpg')"
 //             body.style.transition = "background 1s"
 //     }, false)
+var today = new Date()
+var curHr = today.getHours()
+
+if (curHr < 12) {
+  document.getElementById('greet').innerText = "Good Morning"
+} else if (curHr < 18) {
+  document.getElementById('greet').innerText = "Good Afternoon"
+} else {
+  document.getElementById('greet').innerText = "Good Evening"
+}
