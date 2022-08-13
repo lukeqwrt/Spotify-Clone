@@ -18,6 +18,11 @@
 //     }
 // }
 $spCol: #1DB954;
+
+
+body{
+    
+}
 .loader{
     position: fixed;
     top: 0;
@@ -70,6 +75,10 @@ $spCol: #1DB954;
     display: none;
 }
 .main{
+
+    @media screen and (max-width: 957px) {
+        display: none;
+    }
     height: 100vh;
     display: grid;
     grid-auto-flow: column;
@@ -155,13 +164,15 @@ $spCol: #1DB954;
      }
         grid-column: 2/3;
         margin-left: 240px;
+        background: linear-gradient(180deg, #27423A -4.54%, #142822 37.19%, #1A2320 44.12%, #121212 56.85%);
+
+        
        //  background: linear-gradient(180deg, #337D67 -4.54%, #27423A 6.35%, #17332B 13.18%, #142822 25.07%, #1A2320 31.01%, #151B19 100%);
-         background: linear-gradient(180deg, #27423A -4.54%, #142822 37.19%, #1A2320 44.12%, #121212 56.85%);
         // background: url('/assets/change-body-bg-green.jpg');
      //   background: url('/assets/final-green.jpg');
      //   background: url("/assets/default-bg.jpg");
      // background-image: linear-gradient(pink,black, black);
-     background: url('/assets/taylor-bg.jpg');
+    //  background: url('/assets/taylor-bg.jpg');
         background-repeat: no-repeat;
         height: 100%;
         padding-left: 28px;

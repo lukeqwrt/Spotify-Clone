@@ -56,9 +56,9 @@ $spCol: #1DB954;
     display: none;
 }
 .main{
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 957px) {
         display: none;
- }
+    }
     height: 100vh;
     display: grid;
     grid-auto-flow: column;
@@ -143,14 +143,14 @@ $spCol: #1DB954;
     //     padding-left: 15px;
     //  }
         .header{
-            height: 340px;
+            height: 380px;
             width: 100%;
             position: relative;
-            background: url('../assets/spotify/bts-banner.jpg') ;
-            background-position: center 0%;
+            background: url('../assets/spotify/bts-real-bg-1.jpg') ;
+            background-position: center 1%;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
+            // background-attachment: fixed;
             .opacity{
                 height: 100%;
                 width: 100%;
